@@ -1,0 +1,17 @@
+@forward './navbar';
+@forward './hero';
+
+body {
+    padding:0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1800px;
+    height: 1080;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
