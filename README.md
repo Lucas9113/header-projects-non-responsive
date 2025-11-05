@@ -1,4 +1,4 @@
-## Header Proyect (non-responsive)
+# 🧩 Header Project (Non-Responsive) — Coworking Space
 ---
 This is a front-end practice project focused on building a **header and hero section** using **HTML**, **Sass**, and **Vite**.  
 The design was created for **large screens (1800x1080)** and follows a clean, modern layout structure.
@@ -17,11 +17,11 @@ To run the project locally:
 
 ```bash
 # Clone this repository
-git clone https://github.com/YOUR-USERNAME/header-no-responsive.git
+git clone https://github.com/Lucas9113/header-projects-non-responsive.git
 
 
 # Navigate to the project folder
-cd cowrking_space
+cd header-projects-non-responsive/cowrking_space
 
 # Install dependencies
 npm install
@@ -33,7 +33,7 @@ npm run dev
 ---
 
 
-### Project Overview 🎨
+### 🎨 Project Overview
 
 Built from scratch without responsive design, optimized for desktop view (1800x1080).
 
@@ -44,14 +44,15 @@ Uses a structured Sass setup:
 - `layout/` fcontains `_nav.scss` and `_hero.scss` sections, plus main container and body styling
 
 
-### Future Improvements 💡
+### 💡 Future Improvements
 
 - Add responsive design using Sass mixins and breakpoints.
 
 - Implement mobile and tablet layouts.
 
 ---
-### Preview
+### 📸 Preview
+
 <p>
  <img src="./assests/preview_hedear.png" alt="Project Preview" width="1200"/>
 </p>
