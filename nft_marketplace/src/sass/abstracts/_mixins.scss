@@ -1,0 +1,36 @@
+// Mobile First Breakpoints
+@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+}
+
+
+// Útil para contenedores
+@mixin container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+  @include breakpoint(tablet) {
+    max-width: 720px;
+  }
+  
+  @include breakpoint(desktop) {
+    max-width: 960px;
+  }
+  
+  @include breakpoint(large) {
+    max-width: 1200px;
+  }
+}

@@ -1,0 +1,265 @@
+@use '../abstracts/variables' as *;
+
+//hero styles
+section.hero {
+    display: flex;
+    padding: 0 35px;
+  
+
+    .title {
+        max-width: 920px;
+        h1 {
+            font-family: $font-title;
+            font-size: 72px;
+            line-height: 96px;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            margin-bottom: 16px;
+
+
+            &::before{
+                content: "";
+                width: 280px;
+                height: 96px;
+                background: url('../src/icons/detalle_texto.svg');
+                position: absolute;
+                right: 53%;
+                top: 0%;
+                pointer-events: none;
+            }
+        }
+
+
+        p {
+            font-family: $font-primary;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 40px;
+            color: #8E8E8E;
+            position: relative;
+            margin-bottom: 40px;
+
+
+            &::before {
+                content: "";
+                background-color: $second-color;
+                width: 83px;
+                height: 4px;
+                position: absolute;
+                top:68%;
+                right: 91%;
+            }
+        }
+
+       .action {
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          margin-bottom: 74px;
+
+
+            .btn__exp {
+             text-decoration: none;
+             background-color: $second-color;
+             padding: 16px 86px;
+             color: white;
+             font-family: $font-primary;
+             font-size: 18px;
+
+            }
+
+            .btn__learn {
+             color: $black;
+             font-family: $font-primary;
+             font-weight: 400;
+             font-size: 18px;
+             text-decoration: underline;
+             position: relative;
+
+
+             &::after {
+                content:url('../src/icons/arrow.svg');
+                position: absolute;
+                right: -60%;
+                top: -18%;
+
+             }
+
+            }
+
+
+        }
+
+        .artworks {
+
+            h2{
+                font-family: $font-title;
+                font-size: 32px;
+                font-weight: 400;
+                margin-bottom: 32px;
+            }
+
+            .works_img {
+                display: flex;
+                justify-content: space-between;
+
+                img {
+                    width: 48%;
+                    border: 1px solid gray;
+                    padding: 4px;
+                }
+
+                
+            }
+        }
+
+    }
+
+
+    .artwork1_nft {
+        width: 840px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 100%;
+         
+            margin-bottom: 0;
+        }
+
+        .details {
+            width: 600px;
+            max-height: 235px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            padding-bottom: 32px;
+            margin-top: -43px;
+            
+            .info{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 25px;
+                position: relative;
+
+
+                .avatar_info {
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 16px;
+                    padding: 0 32px;
+
+
+                    .artworker {
+                        p {
+                            font-family: $font-primary;
+                            font-size: 18px;
+                            color: #959595;
+                        }
+
+                        h4 {
+                            font-family: $font-primary;
+                            font-size: 24px;
+                            font-weight: 600;
+                        }
+                    }
+                    
+                }
+
+                .text2 {
+                    padding: 32px;
+                    p {
+                      font-family: $font-primary;
+                      font-size: 18px;
+                      color: #959595;
+                    }
+    
+                    h4 {
+                      font-family: $font-primary;
+                      font-size: 24px;
+                      font-weight: 600;
+                    }
+                }
+
+                &::after{
+                    content: "";
+                    background-color: #2E2F38;
+                    width: 544px;
+                    height: 1px;
+                    position: absolute;
+                    top: 100%;
+                    left: 6%;
+
+                }
+            }
+
+
+            .bid {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 16px;
+                padding: 0 32px;
+
+                a {
+                    width: 264px;
+                    height: 48px;
+                    gap:14px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    text-decoration: none;
+                    font-family: $font-primary;
+                    font-size: 18px;
+                    padding: 16px 26px;
+                }
+
+                .btn_bid {
+                    background-color: $second-color;
+                    color: white;
+                }
+
+                .btn_view {
+                    color: $second-color;
+                }
+            }
+
+        }
+
+    }
+
+
+
+    .numbers {
+        margin-top: 20px;
+        display: flex;
+        gap: 72px;
+
+        div {
+            display: inline-flex;
+            gap: 8px;
+            justify-content: center;
+            align-items: center;
+
+            h3{
+                font-family: $font-primary;
+                color: $second-color;
+                font-size: 32px;
+                font-weight: 600;
+            }
+
+            p {
+                font-family: $font-primary;
+                font-size: 18px;
+                font-weight: 400;
+                color: white;
+            }
+        }
+
+    }
+}

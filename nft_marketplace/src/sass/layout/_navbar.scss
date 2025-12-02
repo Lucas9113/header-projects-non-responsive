@@ -1,0 +1,76 @@
+@use '../abstracts/variables' as *;
+
+
+//navabar sytles
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 40px;
+    margin-bottom: 80px;
+
+    nav {
+        margin-right: 35%;
+        
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap:56px;
+
+            li {
+
+                a {
+                    text-decoration: none;
+                    font-family: $font-primary;
+                    color: $black;
+                    font-size: 18px;
+                }
+            }
+
+        }
+    }
+
+
+    .buttons {
+        padding: 0;
+
+
+        ul{
+            margin:0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            gap: 27px;
+            list-style: none;
+
+            
+
+            
+            a {
+              color: $black; 
+              text-decoration: none;
+              font-family: $font-primary;
+              font-size: 18px;
+              
+
+            }
+
+            .btn1 {
+                color: white;
+            }
+            
+            .btn2 {
+              display: block;
+              background-color:#FA504D;
+              padding: 10px 35px;
+              color: white;
+            }
+        }
+    }
+
+}
+

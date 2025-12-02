@@ -1,0 +1,50 @@
+// base settings
+@use '../abstracts/variables' as *;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    margin: 0;
+    padding:0;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+
+  
+   
+  &::before {
+    content: "";
+    position: absolute;
+    width: 46%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #2E2F38;
+    z-index: -1;
+  }
+  
+  .brand {
+    position: absolute;
+    font-family: $font-title;
+    color:#fff;
+    opacity: 0.1;
+    font-size: 288px;
+    font-weight: 400;
+    top:36%;
+    left:66%;
+    z-index:-1;
+    transform: rotate(90deg);
+
+    
+  }
+    
+}
