@@ -1,0 +1,59 @@
+// Mobile First Breakpoints
+/*@mixin breakpoint($point) {
+  @if $point == tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $point == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $point == large {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+}
+
+// Útil para contenedores
+@mixin container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1rem;
+  
+  @include breakpoint(tablet) {
+    max-width: 720px;
+  }
+  
+  @include breakpoint(desktop) {
+    max-width: 960px;
+  }
+  
+  @include breakpoint(large) {
+    max-width: 1200px;
+  }
+}*/
+
+@use '../abstracts/variables' as *;
+
+
+// mixin for buttons
+@mixin btn-style{
+  display: inline-block;
+  background-color: $color-primary;
+  padding: 16px 40px;
+  border-radius: 16px;
+  color: #fff;
+  text-decoration: none;
+  font-family: $font-primary;
+  
+}
+
+// mixin for standar list style
+@mixin list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,152 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    .hero__content {
+        max-width: 760px;
+        max-height: 290px;
+        margin-bottom: 48px;
+
+        h1 {
+            font-size: 80px;
+            font-family: $font-title;
+            font-weight: 700;
+            letter-spacing: -2.8px;
+            margin-bottom: 16px;
+            
+            .in_color{
+                color: $color-primary;
+
+            }
+        }
+
+        p {
+            max-width: 648px;
+            font-family: $font-primary;
+            color:$color-text-prmary;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 40px;
+            margin-top: 0;
+            margin-bottom: 48px;
+        }
+
+
+        .hero__search {
+            display: flex;
+            margin-bottom: 56px;
+    
+            input {
+                width: 60%;
+                height: 60px;
+                border-radius: 6px 0 0 6px;
+                font-size: 18px;
+                font-family: $font-primary;
+                background-color:rgba(208, 208, 210, 0.25);
+                padding-left: 32px;
+            }
+    
+            button {
+                display: flex;
+                align-items: center;
+                padding: 16px;
+                border-radius: 0 6px 6px 0;
+                background-color: $color-primary;
+            }
+        }
+
+        .list__info {
+            @include list;
+            width: 60%;
+            gap:16px;
+            flex-wrap: wrap;
+
+            li {
+                width: 40%;
+                position: relative;
+                font-family: $font-primary;
+                font-size: 18px;
+                color: $color-text-prmary;
+                margin-left: 30px;
+                ;
+                
+
+                &::before {
+                    content:" ";
+                    position: absolute;
+                    width: 22px;
+                    height: 22px;
+                    margin-left: 1.5px;
+                    background-image: url("../src/img/icon-check.svg");
+                    background-size: 20px;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    left: -35px;
+                    
+
+                }
+            }
+                
+        }
+
+        
+    }
+    
+    
+    .hero_img {
+        width: 45%;
+
+        img {
+            max-width: 600px;
+            position: relative;
+            left: -200px;
+        }
+
+    }
+       
+
+}
+
+section.products {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    gap: 24px;
+    margin-bottom: 20px;
+    
+    .products__type {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0;
+
+
+        .products_type_img {
+            width: 96px;
+            height: 96px;
+            margin-bottom: 24px;
+        }
+
+        .product_type_tittle {
+            font-size: 24px;
+            font-family: $font-primary;
+            font-weight: 500;
+            margin:0;
+            margin-bottom: 8px;
+        }
+
+        .product_type_description {
+            font-size: 18px;
+            margin:0;
+            font-family: $font-primary;
+            font-weight: 400;
+            color: $color-text-prmary;
+        }
+    }
+
+    
+}
