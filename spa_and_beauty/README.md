@@ -33,3 +33,4 @@ npm run dev
 ---
 ### 🌐 View Online
 **You can see the project live on GitHub Pages:**
+- [Spa & Beauty Header](https://lucas9113.github.io/header-projects-non-responsive/spa_and_beauty/dist/)
