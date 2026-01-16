@@ -1,7 +1,7 @@
 # 🧩 Header Projects (Non-Responsive)
 
 This repository contains a collection of static header layouts built using **HTML**, **Sass**, and **Vite**.  
-All designs are desktop-only (optimized for 1800x1080).
+All designs are desktop-only (optimized for 1920x1080).
 
 ---
 
@@ -15,6 +15,7 @@ Each project is organized in its own folder, containing its own `index.html` and
 
 ## 🌐 Preview in GitHub Pages
 - 🛒 [Grocery Store Header](https://lucas9113.github.io/header-projects-non-responsive/grocery_store/dist/)
+- 💆 [Spa & Beauty Header](https://lucas9113.github.io/header-projects-non-responsive/spa_and_beauty/dist/)
 
 ---
 ## 💡 About
