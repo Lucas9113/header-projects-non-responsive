@@ -12,12 +12,12 @@
     &::before {
         content: "";
         width: 1200px;
-        height: 980px;
+        height: 1050px;
         position: absolute;
         background-image:url('/icons/woman2.svg');
         background-size: cover;
-        left:20%;
-        top: -150px;
+        left:10%;
+        top: -90px;
 
         pointer-events: none; // para que el elemento realmente no tenga interaccion con el resto de la pagina
         
@@ -149,8 +149,8 @@
 .comment1 {
     max-width: 405px;
     position: relative;
-    left: 75%;
-    top: -580px;
+    left: 1210px;
+    top: -560px;
     padding: 22px;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.50);
@@ -177,8 +177,8 @@
 .comment2 {
     max-width: 405px;
     position: relative;
-    left: 65%;
-    top: -520px;
+    left: 70%;
+    top: -470px;
     padding: 24px;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.50);

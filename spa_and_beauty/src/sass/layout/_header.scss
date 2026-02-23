@@ -10,11 +10,12 @@
 
 
 
+
     .nav__bar {
 
         .menu {
             @include list;
-            gap: 56px;
+            gap: 50px;
 
             li {
                 margin: 0;
@@ -107,10 +108,10 @@
     }
 
     .login {
-        margin-right: 7%;
+        margin-right: 2%;
         ul.menu_login {
             @include list;
-            gap: 32px;
+            gap: 50px;
 
             li {
                 margin:0;
@@ -119,7 +120,7 @@
                 a {
                     text-decoration: none;
                     color:$color-text-primary;
-                    font-size: 18px;
+                    font-size: 16px;
 
                 }
 
@@ -130,6 +131,7 @@
                 
                 a.cart {
                     padding-right: 74px;
+                    
                 }
 
                 .login_btn {
