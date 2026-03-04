@@ -8,6 +8,8 @@ All designs are desktop-only (optimized for 1920x1080).
 ## 📂 Projects Included
 - 🟢 **Coworking Space Header**
 - 🟢 **Grocery Store Header**
+- 🟢 **Spa & Beauty Header**
+- 🟢 **GathSession Header**
 
 Each project is organized in its own folder, containing its own `index.html` and `Sass` structure.
 
@@ -16,6 +18,7 @@ Each project is organized in its own folder, containing its own `index.html` and
 ## 🌐 Preview in GitHub Pages
 - 🛒 [Grocery Store Header](https://lucas9113.github.io/header-projects-non-responsive/grocery_store/dist/)
 - 💆 [Spa & Beauty Header](https://lucas9113.github.io/header-projects-non-responsive/spa_and_beauty/dist/)
+- 📢 [GathSession Header](https://lucas9113.github.io/header-projects-non-responsive/gathsession_lp/dist/)
 
 ---
 ## 💡 About
