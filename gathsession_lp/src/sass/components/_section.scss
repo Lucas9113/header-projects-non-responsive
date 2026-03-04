@@ -1,0 +1,165 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.hero {
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+        
+    .hero-content {
+      width: 50%;
+      margin: 0;
+      padding: 0;
+
+      h1 {
+        color:white;
+        font-family: $font_title;
+        font-size: 80px;
+        font-weight: 700;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 24px;
+
+      }
+
+
+      p {
+        font-family: $font_principal;
+        color: $text-color;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 40px;
+        width: 75%;
+        margin: 0;
+        padding: 0;
+            
+      }
+
+      .hero-buttons {
+        padding-top: 52px;
+        position: relative;
+
+        ul {
+
+         display: flex;
+         @include list;
+         gap: 32px;
+
+
+          li {
+
+           a {
+             font-size: 18px;
+             color: $text-color;
+             font-family: $font_principal;
+
+              &.btn {
+               @include button;
+              }
+            
+            }
+          }
+        }
+
+        &::after {
+          content:url('../../assets/Arrow.svg');
+          position: absolute;
+          right: 435px;
+          top: 48px;
+        }
+
+      }            
+      
+
+    }
+
+    .wrapper {
+     width: 50%;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: 2fr;
+     gap:20px;
+     padding-top: 0;
+
+
+     .wrapp:nth-child(3) {
+       transform: translateY(125px);
+     }
+
+      .wrapp {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+
+
+        img {
+          width: 250px;
+          border-radius: 96px;
+          margin: 0;
+          padding: 0;
+        }
+
+
+        &__blue {
+          background-color: #6E1FED;
+        }
+        &__pink {
+          background-color: #FF69B4;
+        }
+        &__cyan {
+          background-color: #00CED1;
+        }
+        &__orange {
+          background-color: #FFA500;
+        }
+        &__yellow {
+          background-color: #F4B840;
+          
+        }
+      }
+
+      
+
+    }
+  }
+}
+
+.info {
+  padding-top: 0;
+  .container {
+    display: flex;
+    gap:48px;
+    
+    &__components {
+      display: flex;
+      align-items: center;
+      gap:20px;
+      width: 10%;
+
+      img {
+        width: 38px;
+      }
+
+      &--logo {
+        width: 64px;
+        border-radius: 14px;
+        opacity: 0.5;
+        background: rgba(255, 255, 255, 0.25);
+        text-align: center;
+        padding: 4px;
+      }
+
+      &--title{
+        font-family: $font_principal;
+        color:white;
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+      }
+    }
+
+  }
+}

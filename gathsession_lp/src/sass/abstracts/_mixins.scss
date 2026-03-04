@@ -1,0 +1,51 @@
+@use '../abstracts/variables' as *;
+
+
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+
+// mixin for buttons
+@mixin button {
+  text-decoration: none;
+  background-color:$button-color;
+  color: white;
+  font-family: $font_principal;
+  padding: 16px 68px 16px 68px;
+  border-radius: 16px 16px 16px 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+  
+
+// mixin for standar list style
+@mixin list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+

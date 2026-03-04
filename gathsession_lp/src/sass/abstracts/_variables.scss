@@ -1,0 +1,23 @@
+
+//import fonts
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+// breakpoints
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1200px;
+$bp-desktop-xl: 1440px;
+
+
+// import fonts
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600;700;800&display=swap');
+
+//variable fonts:
+$font_title: 'Merriweather', serif;
+$font_principal: 'Poppins', sans-serif;
+
+// variable colors:
+$text-color: #ABABAB;
+$button-color: #DB2A6B;

@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.principal-header {
+    margin: 0;
+    padding-bottom: 138px;
+
+
+    .container {
+        padding-top: 40px;
+        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #2B2D38;
+
+        nav {
+
+        
+           ul {
+              display: flex;
+              gap: 48px;
+              @include list;
+              padding-right: 180px;
+
+              li {
+                   a {
+                     color: $text-color;
+                     text-decoration: none;
+                     font-family: $font_principal;
+                     font-size: 18px;
+                     
+                     &:hover {
+                        padding-bottom: 2px;
+                        border-bottom: 4px solid #ff69b4;
+                     }
+                    }
+                }
+            }
+        }    
+    }
+
+}
